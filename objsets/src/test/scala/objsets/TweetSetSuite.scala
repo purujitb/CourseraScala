@@ -64,6 +64,9 @@ class TweetSetSuite extends FunSuite {
 
   test("descending: set5") {
     new TestSets {
+//      println("-----")
+//      println(set5.mostRetweeted)
+//      println("-----")
       val trends = set5.descendingByRetweet
       assert(!trends.isEmpty)
       assert(trends.head.user == "a" || trends.head.user == "b")
